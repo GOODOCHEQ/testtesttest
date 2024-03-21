@@ -1,0 +1,218 @@
+/* Общие стили для всего документа */
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  color: var(--tg-theme-text-color);
+  background: var(--tg-theme-bg-color);
+}
+
+/* Стили для контейнера */
+.container {
+  max-width: 390px;
+  margin-top: 20px;
+}
+
+/* Стили для внутреннего блока */
+.inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 200px 200px 200px;
+}
+
+/* Стили для изображений */
+.img {
+  width: 140px;
+}
+
+/* Стили для элемента */
+.item {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Стили для кнопки */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border: none;
+  background: var(--tg-btn-background); /* Используем переменные цветов */
+  border-radius: 10px;
+  color: var(--tg-btn-text-color); /* Используем переменные цветов */
+  text-transform: uppercase;
+  font-weight: 700;
+  transition: background .2s linear;
+}
+
+/* Стили для кнопки при наведении */
+.btn:hover {
+  background: var(--tg-btn-hover-background); /* Используем переменные цветов */
+}
+
+/* Стили для кнопки корзины */
+.cart-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border: none;
+  background: var(--tg-btn-background); /* Используем переменные цветов */
+  border-radius: 10px;
+  color: var(--tg-btn-text-color); /* Используем переменные цветов */
+  text-transform: uppercase;
+  font-weight: 700;
+  transition: background .2s linear;
+  margin-top: 10px;
+}
+
+/* Стили для кнопки корзины при наведении */
+.cart-btn:hover {
+  background: var(--tg-btn-hover-background); /* Используем переменные цветов */
+}
+
+/* Стили для счетчика */
+.counter {
+  display: none;
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+/* Стили для счетчика на кнопке */
+.btn-counter {
+  display: none;
+  padding: 10px;
+  border: none;
+  background: var(--tg-btn-counter-background); /* Используем переменные цветов */
+  border-radius: 5px;
+  color: var(--tg-btn-counter-text-color); /* Используем переменные цветов */
+  font-size: 16px;
+  margin-right: 5px;
+}
+
+/* Стили для счетчика на кнопке при наведении */
+.btn-counter:hover {
+  background: var(--tg-btn-counter-hover-background); /* Используем переменные цветов */
+}
+
+/* Стили для текста элемента */
+.item-text {
+  font-size: 15px;
+  margin-top: 0px;
+}
+
+/* Стили для всплывающего окна */
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #aa791e;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 1px solid black;
+  z-index: 1000;
+  padding: 20px;
+  width: 80%;
+  max-width: 80%;
+  height: 80%;
+  max-height: 80%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Стили для содержимого всплывающего окна */
+.popup-content {
+  background-color: #0801013b;
+  padding: 20px;
+  border-radius: 5px;
+  max-height: 80%;
+  overflow-y: auto;
+}
+
+/* Стили для кнопки закрытия всплывающего окна */
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  color: black;
+}
+
+/* Стили для верхнего меню */
+.top-menu {
+  width: 390px;
+  height: 20px;
+  background-color: #efa315;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+/* Стили для кнопки меню */
+.menu-btn {
+  border: none;
+  background: none;
+  color: hsl(0, 70%, 6%);
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  height: 40px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  transition: color 0.3s ease;
+  margin-right: 5px;
+}
+
+/* Стили для кнопки меню при наведении */
+.menu-btn:hover {
+  color: lightgreen;
+}
+
+/* Стили для иконки корзины */
+.cart-icon {
+  position: absolute;
+  background-color: #efa315;
+  top: 30px;
+  left: 10px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+/* Стили для всплывающего окна элемента */
+.item-popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: hwb(42 27% 27%);
+  border: 1px solid black;
+  z-index: 1000;
+  padding: 20px;
+  width: 300px;
+  max-width: 80%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Стили для кнопки закрытия всплывающего окна элемента */
+.close-item-popup {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  color: black;
+}
+
+/* Стили для изображения во всплывающем окне элемента */
+.item-popup-img {
+  max-width: 100%; /* Максимальная ширина изображения */
+  max-height: 200px; /* Максимальная высота изображения */
+  margin-bottom: 10px; /* Отступ снизу */
+}
