@@ -36,9 +36,9 @@ body {
   display: inline-block;
   padding: 10px 20px;
   border: none;
-  background: var(--tg-btn-background); /* Используем переменные цветов */
+  background: #d2960a;
   border-radius: 10px;
-  color: var(--tg-btn-text-color); /* Используем переменные цветов */
+  color: rgb(0, 18, 18);
   text-transform: uppercase;
   font-weight: 700;
   transition: background .2s linear;
@@ -46,26 +46,7 @@ body {
 
 /* Стили для кнопки при наведении */
 .btn:hover {
-  background: var(--tg-btn-hover-background); /* Используем переменные цветов */
-}
-
-/* Стили для кнопки корзины */
-.cart-btn {
-  display: inline-block;
-  padding: 10px 20px;
-  border: none;
-  background: var(--tg-btn-background); /* Используем переменные цветов */
-  border-radius: 10px;
-  color: var(--tg-btn-text-color); /* Используем переменные цветов */
-  text-transform: uppercase;
-  font-weight: 700;
-  transition: background .2s linear;
-  margin-top: 10px;
-}
-
-/* Стили для кнопки корзины при наведении */
-.cart-btn:hover {
-  background: var(--tg-btn-hover-background); /* Используем переменные цветов */
+  background: #73d662;
 }
 
 /* Стили для счетчика */
@@ -80,22 +61,41 @@ body {
   display: none;
   padding: 10px;
   border: none;
-  background: var(--tg-btn-counter-background); /* Используем переменные цветов */
+  background: rgb(248, 168, 24);
   border-radius: 5px;
-  color: var(--tg-btn-counter-text-color); /* Используем переменные цветов */
+  color: rgb(255, 254, 254);
   font-size: 16px;
   margin-right: 5px;
 }
 
 /* Стили для счетчика на кнопке при наведении */
 .btn-counter:hover {
-  background: var(--tg-btn-counter-hover-background); /* Используем переменные цветов */
+  background: lightgreen;
 }
 
 /* Стили для текста элемента */
 .item-text {
   font-size: 15px;
   margin-top: 0px;
+}
+
+/* Стили для кнопки корзины */
+.cart-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border: none;
+  background: rgb(248, 168, 24);
+  border-radius: 10px;
+  color: hwb(0 100% 0%);
+  text-transform: uppercase;
+  font-weight: 700;
+  transition: background .2s linear;
+  margin-top: 10px;
+}
+
+/* Стили для кнопки корзины при наведении */
+.cart-btn:hover {
+  background: lightgreen;
 }
 
 /* Стили для всплывающего окна */
@@ -124,7 +124,7 @@ body {
   background-color: #0801013b;
   padding: 20px;
   border-radius: 5px;
-  max-height: 80%;
+  max-height: 100%;
   overflow-y: auto;
 }
 
@@ -212,7 +212,7 @@ body {
 
 /* Стили для изображения во всплывающем окне элемента */
 .item-popup-img {
-  max-width: 100%; /* Максимальная ширина изображения */
-  max-height: 200px; /* Максимальная высота изображения */
-  margin-bottom: 10px; /* Отступ снизу */
+  max-width: 100%;
+  max-height: 200px;
+  margin-bottom: 10px;
 }
