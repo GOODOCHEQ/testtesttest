@@ -215,6 +215,38 @@ function updateCartButtonVisibility() {
   }
 }
 
+// Функция для обновления содержимого всплывающего окна
+function updatePopupContent() {
+  let popupContent = document.querySelector('.popup-content');
+  popupContent.innerHTML = '<span class="close" id="closePopup">&times;</span>';
+
+  let selectedItemsArray = [];
+
+  for (let item in selectedItems) {
+    if (selectedItems[item].quantity > 0) {
+      let itemCost = selectedItems[item].price * selectedItems[item].quantity;
+      popupContent.innerHTML += `<p>${selectedItems[item].name}: ${selectedItems[item].quantity} шт. - ${itemCost} руб.</p>`;
+
+      // Добавляем номер товара в массив столько раз, сколько он был выбран
+      for (let i = 0; i < selectedItems[item].quantity; i++) {
+        selectedItemsArray.push(item);
+      }
+    }
+  }
+
+  let totalCost = getTotalCost();
+  popupContent.innerHTML += `<p>Итого: ${totalCost} руб.</p>`;
+
+  // Создаем кнопку для отправки данных в Telegram
+  popupContent.innerHTML += `<button id="sendToTelegram">Оформить заказ</button>`;
+
+  const sendToTelegram = document.getElementById('sendToTelegram');
+  sendToTelegram.addEventListener('click', () => {
+    const selectedItemsString = selectedItemsArray.join(',');
+    tg.sendData(selectedItemsString);
+  });
+}
+
 // Обработчик события загрузки контента
 document.addEventListener('DOMContentLoaded', function () {
   let counters = document.querySelectorAll('.counter');
