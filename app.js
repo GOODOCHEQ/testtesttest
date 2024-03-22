@@ -347,3 +347,11 @@ window.addEventListener("click", (event) => {
         itemPopup.style.display = "none";
     }
 });
+
+/* Стили для кнопки Телеграм */
+.telegram-button {
+  position: fixed; /* Фиксированное позиционирование */
+  bottom: 20px; /* Отступ от нижнего края */
+  right: 20px; /* Отступ от правого края */
+  z-index: 9999; /* Устанавливаем высокий уровень z-index, чтобы кнопка была наверху */
+}
