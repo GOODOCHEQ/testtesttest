@@ -1,27 +1,28 @@
 let tg = window.Telegram.WebApp;
 
 let selectedItems = {
-  "1": { name: "Вок 1", price: 5, quantity: 0 },
-  "2": { name: "Вок 2", price: 4, quantity: 0 },
-  "3": { name: "Вок 3", price: 6, quantity: 0 },
-  "4": { name: "Вок 4", price: 2, quantity: 0 },
-  "5": { name: "Вок 5", price: 1, quantity: 0 },
-  "6": { name: "Снек 1", price: 3, quantity: 0 },
-  "7": { name: "Снек 2", price: 2, quantity: 0 },
-  "8": { name: "Суп 1", price: 3, quantity: 0 },
-  "9": { name: "Суп 2", price: 4, quantity: 0 },
-  "10": { name: "Суп 3", price: 3, quantity: 0 },
-  "11": { name: "Пельмени 1", price: 5, quantity: 0 },
-  "12": { name: "Пельмени 2", price: 2, quantity: 0 },
-  "13": { name: "Пельмени 3", price: 3, quantity: 0 },
-  "14": { name: "Роллы 1", price: 4, quantity: 0 },
-  "15": { name: "Роллы 2", price: 3, quantity: 0 },
-  "16": { name: "Роллы 3", price: 5, quantity: 0 },
-  "17": { name: "роллы 4", price: 2, quantity: 0 },
-  "18": { name: "роллы 5", price: 1, quantity: 0 },
-  "18": { name: "роллы 6", price: 3, quantity: 0 },
-  "19": { name: "роллы 7", price: 5, quantity: 0 },
+  "1": { name: "Вок 1", price: 125, quantity: 0 },
+  "2": { name: "Вок 2", price: 200, quantity: 0 },
+  "3": { name: "Вок 3", price: 220, quantity: 0 },
+  "4": { name: "Вок 4", price: 310, quantity: 0 },
+  "5": { name: "Вок 5", price: 300, quantity: 0 },
+  "6": { name: "Снек 1", price: 400, quantity: 0 },
+  "7": { name: "Снек 2", price: 340, quantity: 0 },
+  "8": { name: "Суп 1", price: 230, quantity: 0 },
+  "9": { name: "Суп 2", price: 111, quantity: 0 },
+  "10": { name: "Суп 3", price: 376, quantity: 0 },
+  "11": { name: "Пельмени 1", price: 321, quantity: 0 },
+  "12": { name: "Пельмени 2", price: 322, quantity: 0 },
+  "13": { name: "Пельмени 3", price: 625, quantity: 0 },
+  "14": { name: "Роллы 1", price: 241, quantity: 0 },
+  "15": { name: "Роллы 2", price: 541, quantity: 0 },
+  "16": { name: "Роллы 3", price: 236, quantity: 0 },
+  "17": { name: "роллы 4", price: 562, quantity: 0 },
+  "18": { name: "роллы 5", price: 263, quantity: 0 },
+  "18": { name: "роллы 6", price: 563, quantity: 0 },
+  "19": { name: "роллы 7", price: 755, quantity: 0 },
 };
+
 
 // Массив с описаниями товаров
 const itemDescriptions = [
