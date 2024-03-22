@@ -104,6 +104,9 @@ function handleItemClick(itemId, counterId) {
         document.getElementById(`btn${itemId}_plus`).style.display = "inline-block";
         updatePopupContent();
     }
+
+    // Показываем кнопку "Вы выбрали товар" при клике на кнопку "Корзина"
+    tg.MainButton.show();
   });
 }
 
